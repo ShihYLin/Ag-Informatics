@@ -1,6 +1,6 @@
 .container{
     margin:0px auto;
-    width: 600px; 
+    width: 100%; 
 }
 
 #header{
@@ -8,7 +8,8 @@
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-variant: small-caps;
-    padding: 20pt
+    padding: 20pt;
+    text-align: center;
 }
 
 #about{
