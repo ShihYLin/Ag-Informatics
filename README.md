@@ -1,4 +1,4 @@
-# ShihYun-ASM590-Labs
+# ShihYun-ASM591-Labs
 
 Labs for ASM590
 #Design Prompt
