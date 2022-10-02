@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
-{% extend "index.html" %}
 
-{% block content%}
 <head>
     <title>{{field_name}}</title>
 </head>
 
 <body>
-    <h1>{{field_name}}</h1>
+    {% if field %}
+    <h1>{{field.field_name}}</h1>
     <h2>Observation</h2>
-    {% if latest_observation %}
         <ul>
-        {% for field in latest_observation %}
-            <li><a href="/farmnotes/{{ observation.id }}/">{{ observation.observation_name }}</a></li>
+        {% for items in observation %}
+            <li><a href="/farmnotes/{{ observation.id }}/">{{ items.observation_title }}</a></li>
         {% endfor %}
         </ul>
     {% else %}
