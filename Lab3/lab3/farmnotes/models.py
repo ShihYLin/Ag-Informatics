@@ -1,6 +1,7 @@
 from random import choices
 from unittest.util import _MAX_LENGTH
 from django.db import models
+from datetime import datetime
 
 # Create your models here.
 OBSERVATION_TYPES = [
@@ -25,6 +26,6 @@ class Observation(models.Model):
     author = models.CharField(max_length = 100)
     observation_content = models.CharField(max_length = 1000)
     observation_type = models.CharField(max_length = 200, choices = OBSERVATION_TYPES)
-    observation_date = models.DateTimeField
+    observation_date = models.DateTimeField(default=datetime.now, blank=True)
     def __str__(self):
         return self.observation_title

@@ -8,8 +8,8 @@
 <body>
     {% if field %}
     <h1>{{field.field_name}}</h1>
-    {% if observation %}
-    <h2>"Observation:" {{ observation.observation_name }}</h2>
+    {% elif observation %}
+    <h2>Observation: {{ observation.observation_name }}</h2>
     <h4>{{ observation.observation_content }}</h4>
     <h4>{{ observation.author }}</h4>
     <h4>{{ observation.observation_date }}</h4>

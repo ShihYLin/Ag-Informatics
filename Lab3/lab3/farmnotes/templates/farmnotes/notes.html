@@ -10,8 +10,9 @@
     <h1>{{field.field_name}}</h1>
     <h2>Observation</h2>
         <ul>
-        {% for items in observation %}
-            <li><a href="/farmnotes/{{ observation.id }}/">{{ items.observation_title }}</a></li>
+        {# list all observations in the field #}
+        {% for item in observation %}
+            <li><a href="/farmnotes/{{ field.id }}/{{ item.id }}/">{{ item.observation_title }}</a></li>
         {% endfor %}
         </ul>
     {% else %}
