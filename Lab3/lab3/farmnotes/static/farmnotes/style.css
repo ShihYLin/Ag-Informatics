@@ -1,0 +1,7 @@
+h1 {
+    color: orange;
+}
+body {
+    background: white url("images/imagehere.png") repeat;
+    text-align: center;
+}
