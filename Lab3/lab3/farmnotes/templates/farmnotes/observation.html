@@ -9,6 +9,7 @@
 
 <body>
     {% if field %}
+    <div class = "list">
     <h1>{{field.field_name}}</h1>
     {% endif %}
     {% if observation %}
@@ -20,5 +21,6 @@
     {% else %}
         <p>No observation are available.</p>
     {% endif %}
+    </div>
 </body>
 </html>

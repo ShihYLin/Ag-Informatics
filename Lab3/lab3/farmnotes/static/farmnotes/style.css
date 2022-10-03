@@ -6,3 +6,13 @@ body {
     background: white url("images/imagehere.png") repeat;
     text-align: center;
 }
+
+
+ul {
+    display: inline-block;
+    text-align: left;
+ }
+
+ div {
+    background-color: aliceblue;
+ }
