@@ -22,7 +22,8 @@ def notes(request, field_id):
 #These arguments correspond to the arguments in the url
 def observation(request, field_id, observation_id):
     observation = get_object_or_404(Observation, pk=observation_id)
-    return render(request, 'farmnotes/observation.html',{'observation': observation})
+    field = get_object_or_404(Field, pk=field_id)
+    return render(request, 'farmnotes/observation.html',{'field': field, 'observation': observation})
 #        return HttpResponse("You're looking at observation %s related to field %s." % (observation_id, field_id))
 
 #Show all the fields in my farm
