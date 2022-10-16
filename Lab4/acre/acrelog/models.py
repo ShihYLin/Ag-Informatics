@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Field(models.Model):
-    field_num = models.IntegerField(max_length=5)
+    field_num = models.IntegerField()
     soil_type = models.CharField(max_length=20)
     fallow = models.BooleanField()
 
@@ -20,7 +20,7 @@ class Crop(models.Model):
 class Chemical(models.Model):
     chemical_type = models.CharField(max_length=50)
     date_applied = models.DateTimeField()
-    amount = models.FloatField(max_length=50)
+    amount = models.FloatField()
 
     def __str__(self):
         return f"{self.amount} pounds of {self.chemical_type} applied on {self.date_applied}"
