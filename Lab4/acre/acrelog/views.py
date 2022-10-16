@@ -1,10 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponse, Http404
 from .models import Field, Crop, Chemical
 
 # Create your views here.
 
 def field(request):
+    field = get_object_or_404(Field)
     return render (request, "a/field.html", {
         "field": Field.objects.all()
     })
@@ -14,10 +15,7 @@ def crop(request):
         "crop": Crop.objects.all()
     })
 
-def chemical(request):
-    return render (request, "acrelog/chemical.html", {
-        "chemical": Chemical.objects.all()
-    })
+
 
 def index(request):
-    return HttpResponse("Hello, world! You're at the index, or 'home' page.")
+    return HttpResponse("hello world")
