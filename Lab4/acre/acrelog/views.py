@@ -6,7 +6,7 @@ from .models import Field, Crop, Chemical
 
 def field(request):
     field = get_object_or_404(Field)
-    return render (request, "a/field.html", {
+    return render (request, "acrelog/field.html", {
         "field": Field.objects.all()
     })
 
@@ -16,6 +16,10 @@ def crop(request):
     })
 
 
-
+def chemical(request):
+    return render (request, "acrelog/chemical.html",{
+        "chemical": Chemical.objects.all()
+    })
+    
 def index(request):
     return HttpResponse("hello world")

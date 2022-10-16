@@ -4,3 +4,6 @@
 
 **User** workers at ACRE.
 Can use this webpage to input new data into the the application
+
+**Data Model**
+!
