@@ -6,4 +6,6 @@
 Can use this webpage to input new data into the the application
 
 **Data Model**
-!
+!https://github.com/ShihYLin/ShihYun-ASM590-Labs/blob/main/Lab4/images/data-model.png
+
+I chose field, crop, and chemical to be my classes. Field represent the
