@@ -1,0 +1,18 @@
+[
+    {
+      "model": "acrelog.field",
+      "fields": {
+        "field_name": "East iso",
+        "soil_type": "clay",
+        "location": "East"
+      }
+    },
+    {
+        "model": "acrelog.field",
+        "fields": {
+          "field_name": "Soybean Cropland",
+          "soil_type": "rich loam",
+          "location": "2920 148k west"
+        }
+      }
+  ]
