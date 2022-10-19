@@ -24,6 +24,6 @@ location | Attribute | location of the field | 50 characters | String
 scientific_name | Class | scientific name of the crop | 50 characters | String
 crop_name | Attribute | common name of the crop | 50 characters | String
 life_form | Attribute | life form of the crop | 50 characters | String
-chemical_type | Attribute | type of applied chemical | String
-date_applied | Attribute | date and time of application | datetime
-chemical_name | Class | name of the applied chemical | String
+chemical_type | Attribute | type of applied chemical | 50 characters | String
+date_applied | Attribute | date and time of application | datetime | datetime
+chemical_name | Class | name of the applied chemical | 50 characters | String
