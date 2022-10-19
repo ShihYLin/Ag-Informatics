@@ -4,8 +4,7 @@ blank=True
 
 # Create your models here.
 class Field(models.Model):
-    field_num = models.IntegerField(default='num', primary_key = True)
-    field_name = models.CharField(max_length=50, default='field_name')
+    field_name = models.CharField(max_length=50, primary_key = True)
     soil_type = models.CharField(max_length=50)
     location = models.CharField(max_length=50, default='location')
 
@@ -22,7 +21,7 @@ class Crop(models.Model):
 
 class Chemical(models.Model):
     chemical_type = models.CharField(max_length=50)
-    date_applied = models.DateTimeField()
+    date_applied = models.DateField()
     chemical_name = models.CharField(max_length=50, default='chemical')
 
     def __str__(self):

@@ -1,6 +1,8 @@
+
 [
     {
-      "model": "acrelog.field",
+      "model": "acrelog.Field",
+      "pk": 1,
       "fields": {
         "field_name": "East iso",
         "soil_type": "clay",
@@ -8,11 +10,21 @@
       }
     },
     {
-        "model": "acrelog.field",
+        "model": "acrelog.Field",
+        "pk": 1,
         "fields": {
           "field_name": "Soybean Cropland",
           "soil_type": "rich loam",
           "location": "2920 148k west"
         }
-      }
+      },
+    {
+        "model": "acrelog.Chemical",
+        "pk": 3,
+        "fields":{
+            "chemical_type": "Fertilizer",
+            "date_applied": "2018-01-01",
+            "chemical_name": "NH3"
+        }
+    }
   ]
