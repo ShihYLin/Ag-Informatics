@@ -4,22 +4,27 @@ from .models import Field, Crop, Chemical
 
 # Create your views here.
 
-def field(request):
-    field = get_object_or_404(Field)
-    return render (request, "acrelog/field.html", {
-        "field": Field.objects.all()
-    })
+#def field(request):
+#    field = get_object_or_404(Field)
+#    return render (request, "acrelog/field.html", {
+#        "field": Field.objects.all()
+#    })
 
-def crop(request):
-    return render (request, "acrelog/crop.html",{
-        "crop": Crop.objects.all()
-    })
+#def crop(request):
+#    return render (request, "acrelog/crop.html",{
+#        "crop": Crop.objects.all()
+#    })
 
-
-def chemical(request):
-    return render (request, "acrelog/chemical.html",{
-        "chemical": Chemical.objects.all()
-    })
+#def chemical(request):
+#    return render (request, "acrelog/chemical.html",{
+#        "chemical": Chemical.objects.all()
+#    })
     
 def index(request):
-    return HttpResponse("hello world")
+    latest_fields = Field.objects.all()
+    context = {'latest_fields': latest_fields}
+    return render(request, 'acrelog/index.html', context)
+
+def fields(request, field_id):
+    field = get_object_or_404(Field, pk=(field_id))
+    return render(request, 'acre/fields.html',{'field':Field, 'crop':Crop, 'chemical':Chemical})

@@ -46,6 +46,16 @@
       }
     },
     {
+      "model": "acrelog.Crop",
+      "pk": 2,
+      "fields": {
+        "crop_name": "wheat",
+        "scientific_name": "Triticum",
+        "life_form": "annual plant",
+        "field_id": "DKC"
+      }
+    },
+    {
       "model": "acrelog.Chemical",
       "pk": 3,
       "fields": {
@@ -83,16 +93,6 @@
         "date_applied": "2020-10-14",
         "chemical_name": "Potash",
         "chem_field_id": "East iso"
-      }
-    },
-    {
-      "model": "acrelog.Crop",
-      "pk": 2,
-      "fields": {
-        "crop_name": "wheat",
-        "scientific_name": "Triticum",
-        "life_form": "annual plant",
-        "field_id": "DKC"
       }
     }
 ]    
