@@ -4,6 +4,7 @@ blank=True
 
 # Create your models here.
 class Field(models.Model):
+    field_num = models.IntegerField(default='num', primary_key = True)
     field_name = models.CharField(max_length=50, default='field_name')
     soil_type = models.CharField(max_length=50)
     location = models.CharField(max_length=50, default='location')
