@@ -17,14 +17,32 @@
           "soil_type": "rich loam",
           "location": "2920 148k west"
         }
-      },
+    },
     {
-        "model": "acrelog.Chemical",
-        "pk": 3,
-        "fields":{
-            "chemical_type": "Fertilizer",
-            "date_applied": "2018-01-01",
-            "chemical_name": "NH3"
-        }
+      "model": "acrelog.Field",
+      "pk": 1,
+      "fields": {
+        "field_name": "Eastend",
+        "soil_type": "rich loam",
+        "location": "Eastend"
+      }
+    },
+    {
+      "model": "acrelog.Field",
+      "pk": 1,
+      "fields": {
+        "field_name": "Soybean Cropland",
+        "soil_type": "rich loam",
+        "location": "2920 148k west"
+      }
+    },
+    {
+      "model": "acrelog.Field",
+      "pk": 1,
+      "fields": {
+        "field_name": "West Half",
+        "soil_type": "loam",
+        "location": "West side"
+      }
     }
-  ]
+]    
