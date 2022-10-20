@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acrelog App</title>
+</head>
+
+<body>
+    <header>Acrelog</header>
+    <div>
+        <h1>{{ field.field_name }} Operation Logs</h1>
+        <h2>Treatment Log:</h2>
+        <ul>
+        {% for treatment in field.treatment_set.all %}
+            <li>{{ treatment.treatment_date }}: {{ treatment.treatment_name }} by {{ treatment.treatment_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Planting Log:</h2>
+        <ul>
+        {% for planting in field.planting_set.all %}
+            <li>{{ planting.planting_date }}: {{ planting.planting_name }} by {{ planting.planting_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Tillage Log:</h2>
+        <ul>
+        {% for tillage in field.tillage_set.all %}
+            <li>{{ tillage.tillage_date }}: {{ tillage.tillage_name }} by {{ tillage.tillage_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Terminate Log:</h2>
+        <ul>
+        {% for terminate in field.terminate_set.all %}
+            <li>{{ terminate.terminate_date }}: {{ terminate.terminate_name }} by {{ terminate.terminate_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Fertilizer Log:</h2>
+        <ul>
+        {% for fertilizer in field.fertilizer_set.all %}
+            <li>{{ fertilizer.fertilizer_date }}: {{ fertilizer.fertilizer_name }} by {{ fertilizer.fertilizer_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Harvest Log:</h2>
+        <ul>
+        {% for harvest in field.harvest_set.all %}
+            <li>{{ harvest.harvest_date }}: {{ harvest.harvest_name }} by {{ harvest.harvest_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    	<h2>Install Log:</h2>
+        <ul>
+        {% for install in field.install_set.all %}
+            <li>{{ install.install_date }}: {{ install.install_name }} by {{ install.install_performer }}</li>    
+        {% endfor %}
+    	</ul>
+    </div>
+</body>
+</html>
