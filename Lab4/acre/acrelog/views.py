@@ -25,6 +25,8 @@ def index(request):
     context = {'latest_fields': latest_fields}
     return render(request, 'acrelog/index.html', context)
 
-def fields(request, field_id):
-    field = get_object_or_404(Field, pk=(field_id))
-    return render(request, 'acre/fields.html',{'field':Field, 'crop':Crop, 'chemical':Chemical})
+def fields(request, field_id, crop_id, chemical_id):
+    field = get_object_or_404(Field, pk=field_id)
+    crop = get_object_or_404(Crop, pk=crop_id)
+    chemical = get_object_or_404(Chemical, pk=chemical_id)
+    return render(request, 'acrelog/fields.html',{'field':field, 'crop':crop, 'chemical':chemical})

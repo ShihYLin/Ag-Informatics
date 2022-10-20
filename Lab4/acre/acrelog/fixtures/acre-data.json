@@ -4,7 +4,7 @@
       "model": "acrelog.Field",
       "pk": 1,
       "fields": {
-        "field_name": "East iso",
+        "field_name": "EastIso",
         "soil_type": "clay",
         "location": "East"
       }
@@ -13,7 +13,7 @@
         "model": "acrelog.Field",
         "pk": 1,
         "fields": {
-          "field_name": "Soybean Cropland",
+          "field_name": "SoybeanCropland",
           "soil_type": "rich loam",
           "location": "2920 148k west"
         }
@@ -40,7 +40,7 @@
       "model": "acrelog.Field",
       "pk": 1,
       "fields": {
-        "field_name": "West Half",
+        "field_name": "WestHalf",
         "soil_type": "loam",
         "location": "West side"
       }
