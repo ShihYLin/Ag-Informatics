@@ -6,13 +6,9 @@
 
 <body>
     {% if field %}
-    <h1>{{field class="field_name"}}</h1>
+    <h1 >{{field.field_name}}</h1>
+    <h4>{{ field.soil_type }}</h4>
+    <h4>{{ field.location }}</h4>
     {% endif %}
-    {% if latest_fields %}
-    <h4>{{ field.soil.type }}</h4>
-    <h4>{{ field.location</h4>
-    {% endif %}
-    
-
 </body>
 </html>

@@ -4,5 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('<int:field_id>/', views.fields, name="fields")
+    path('<str:field_name>/', views.fields, name="fields")
 ]
+
+
