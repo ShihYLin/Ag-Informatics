@@ -5,10 +5,22 @@
 </head>
 
 <body>
+    <h1>Acrelog</h1>
     {% if field %}
-    <h1 >{{field.field_name}}</h1>
-    <h4>{{ field.soil_type }}</h4>
-    <h4>{{ field.location }}</h4>
+    <h2 >{{field.field_name}}</h2>
+    <h4>soil type: {{ field.soil_type }}</h4>
+    <h4>location: {{ field.location }}</h4>
     {% endif %}
+
+    {% for crop in field.crop_set.all %}
+        <h3>current crop:</h3>
+        <li>{{ crop.crop_name }} is {{ crop.life_form }}</li>
+    {% endfor %}
+
+    {% for chemical in field.chemical_set.all %}
+        <h3>applied chemical:</h3>
+        <h4>chemical type: {{ chemical.chemical_type }}</h4>
+        <li>{{ chemical.chemical_name }} is applied on {{ chemical.date_applied }}</li>
+    {% endfor %}
 </body>
 </html>
