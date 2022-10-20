@@ -1,0 +1,160 @@
+[
+	{
+		"model": "acrelog.field",
+		"fields": {
+			"field_name": "Field 71",
+			"field_id": "71",
+			"field_notes": ""
+		},
+		"pk": 1
+	},
+	{
+		"model": "acrelog.treatment",
+		"fields": {
+			"field": 1,
+			"treatment_name": "RoundUp Spraying",
+			"treatment_notes": "One 32 oz can was used",
+			"treatment_type": "spray",
+			"treatment_date": "2017-05-15 12:00",
+			"treatment_performer": "Jeremy",
+			"treatment_chemical": "RoundUp",
+			"treatment_rate": "0",
+			"treatment_location": ""
+		},
+		"pk": 2
+	},
+	{
+		"model": "acrelog.planting",
+		"fields": {
+			"field": 1,
+			"planting_name": "Bean Planting",
+			"planting_notes": "Variety P34T07R2e100K, rate unknown",
+			"planting_type": "planting",
+			"planting_date": "2017-06-02 12:00",
+			"planting_performer": "Bryan",
+			"planting_crop": "beans",
+			"planting_rate": "0",
+			"planting_location": ""
+		},
+		"pk": 3
+	},
+	{
+		"model": "acrelog.treatment",
+		"fields": {
+			"field": 1,
+			"treatment_name": "RoundUp Spraying 2",
+			"treatment_notes": "One 32 oz can was used",
+			"treatment_type": "spray",
+			"treatment_date": "2017-06-26 12:00",
+			"treatment_performer": "Jeremy",
+			"treatment_chemical": "RoundUp",
+			"treatment_rate": "0",
+			"treatment_location": ""
+		},
+		"pk": 4
+	},
+	{
+		"model": "acrelog.harvest",
+		"fields": {
+			"field": 1,
+			"harvest_name": "Bean Harvest",
+			"harvest_notes": "Variety P34T07R2e100K, rate unknown",
+			"harvest_type": "harvest",
+			"harvest_date": "2017-10-17 12:00",
+			"harvest_performer": "Bryan",
+			"harvest_crop": "beans",
+			"harvest_rate": "0",
+			"harvest_location": ""
+		},
+		"pk": 5
+	},
+	{
+		"model": "acrelog.treatment",
+		"fields": {
+			"field": 1,
+			"treatment_name": "Liming",
+			"treatment_notes": "",
+			"treatment_type": "spread",
+			"treatment_date": "2017-11-08 12:00",
+			"treatment_performer": "CERES Coop",
+			"treatment_chemical": "Lime",
+			"treatment_rate": "1.21",
+			"treatment_location": ""
+		},
+		"pk": 6
+	},
+	{
+		"model": "acrelog.tillage",
+		"fields": {
+			"field": 1,
+			"tillage_name": "End of Season Chiseling",
+			"tillage_notes": "",
+			"tillage_type": "chisel",
+			"tillage_date": "2017-11-11 12:00",
+			"tillage_performer": "Taylor",
+			"tillage_implement": "Chisel",
+			"tillage_location": ""
+		},
+		"pk": 7
+	},
+	{
+		"model": "acrelog.fertilizer",
+		"fields": {
+			"field": 1,
+			"fertilizer_name": "Ammonia Application",
+			"fertilizer_notes": "150 lbs used",
+			"fertilizer_type": "fertilize",
+			"fertilizer_date": "2018-05-02 12:00",
+			"fertilizer_performer": "Jeremy",
+			"fertilizer_chemical": "NH3",
+			"fertilizer_rate": "0",
+			"fertilizer_location": "East end"
+		},
+		"pk": 8
+	},
+	{
+		"model": "acrelog.planting",
+		"fields": {
+			"field": 1,
+			"planting_name": "Soybean Planting",
+			"planting_notes": "Variety CZ3458171K, rate unknown",
+			"planting_type": "planting",
+			"planting_date": "2018-05-06 12:00",
+			"planting_performer": "Aaron",
+			"planting_crop": "soybeans",
+			"planting_rate": "0",
+			"planting_location": ""
+		},
+		"pk": 9
+	},
+	{
+		"model": "acrelog.treatment",
+		"fields": {
+			"field": 1,
+			"treatment_name": "Valor Application",
+			"treatment_notes": "3 oz used",
+			"treatment_type": "spray",
+			"treatment_date": "2018-05-08 12:00",
+			"treatment_performer": "Jeremy",
+			"treatment_chemical": "Valor XLT",
+			"treatment_rate": "0",
+			"treatment_location": ""
+		},
+		"pk": 10
+	},
+	{
+		"model": "acrelog.treatment",
+		"fields": {
+			"field": 1,
+			"treatment_name": "Liberty Link Application",
+			"treatment_notes": "25 oz used",
+			"treatment_type": "spray",
+			"treatment_date": "2018-06-07 12:00",
+			"treatment_performer": "Jeremy",
+			"treatment_chemical": "Liberty Link",
+			"treatment_rate": "0",
+			"treatment_location": ""
+		},
+		"pk": 11
+	}
+]
