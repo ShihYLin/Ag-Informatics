@@ -1,0 +1,98 @@
+
+[
+    {
+      "model": "acrelog.Field",
+      "pk": 1,
+      "fields": {
+        "field_name": "EastIso",
+        "soil_type": "clay",
+        "location": "East"
+      }
+    },
+    {
+        "model": "acrelog.Field",
+        "pk": 2,
+        "fields": {
+          "field_name": "SoybeanCropland",
+          "soil_type": "rich loam",
+          "location": "2920 148k west"
+        }
+    },
+    {
+      "model": "acrelog.Field",
+      "pk": 3,
+      "fields": {
+        "field_name": "Eastend",
+        "soil_type": "rich loam",
+        "location": "Eastend"
+      }
+    },
+    {
+      "model": "acrelog.Field",
+      "pk": 4,
+      "fields": {
+        "field_name": "DKC",
+        "soil_type": "loam",
+        "location": "63-91"
+      }
+    },
+    {
+      "model": "acrelog.Field",
+      "pk": 5,
+      "fields": {
+        "field_name": "WestHalf",
+        "soil_type": "loam",
+        "location": "West side"
+      }
+    },
+    {
+      "model": "acrelog.Crop",
+      "pk": 6,
+      "fields": {
+        "crop_name": "wheat",
+        "scientific_name": "Triticum",
+        "life_form": "annual plant",
+        "field_id": "DKC"
+      }
+    },
+    {
+      "model": "acrelog.Chemical",
+      "pk": 7,
+      "fields": {
+        "chemical_type": "fertilizer",
+        "date_applied": "2017-04-22",
+        "chemical_name": "NH3",
+        "chem_field_id": "West Half"
+      }
+    },
+    {
+      "model": "acrelog.Chemical",
+      "pk": 8,
+      "fields": {
+        "chemical_type": "fertilizer",
+        "date_applied": "2017-07-24",
+        "chemical_name": "Headline AMP",
+        "chem_field_id": "Soybean Cropland"
+      }
+    },
+    {
+      "model": "acrelog.Chemical",
+      "pk": 9,
+      "fields": {
+        "chemical_type": "pesticide",
+        "date_applied": "2017-05-07",
+        "chemical_name": "XLT302",
+        "chem_field_id": "Eastend"
+      }
+    },
+    {
+      "model": "acrelog.Chemical",
+      "pk": 10,
+      "fields": {
+        "chemical_type": "fertilizer",
+        "date_applied": "2020-10-14",
+        "chemical_name": "Potash",
+        "chem_field_id": "East iso"
+      }
+    }
+]    

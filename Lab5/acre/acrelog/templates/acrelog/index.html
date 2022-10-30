@@ -1,0 +1,28 @@
+{%extends "skeleton.html"%}
+{% block content %}
+<style>
+    h1 {
+      text-align: center;
+    }
+    
+</style>
+
+    <h1>Welcome to My Farm Fields!</h1>
+    {% if latest_fields %}
+        <ul>
+        {% for field in latest_fields %}
+        <div class="card text-center">
+            <h5 class="card-header"></h5>
+            <div class="card-body">
+              <h5 class="card-title">{{ field.field_name }}</h5>
+              <p class="card-text">Operations in {{ field.field_name }}.</p>
+              <a href="#" class="btn btn-primary">Go to {{ field.field_name }}</a>
+            </div>
+        </div> 
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No fields are available.</p>
+    {% endif %}
+
+{% endblock content %}
