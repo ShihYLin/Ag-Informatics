@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>acrelog App</title>
-</head>
+{%extends "skeleton.html"%}
+{% block content %}
 
-<body>
     <h1>My Farm Fields</h1>
     {% if latest_fields %}
         <ul>
@@ -16,5 +12,4 @@
         <p>No fields are available.</p>
     {% endif %}
 
-</body>
-</html>
+{% endblock content %}
