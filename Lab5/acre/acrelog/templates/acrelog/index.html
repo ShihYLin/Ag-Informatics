@@ -6,7 +6,19 @@
     }
     
 </style>
-
+  
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Information
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="https://weather.com/weather/tenday/l/Indianapolis+IN?canonicalCityId=e304a6e3636b5906a7fe1f6cc02e9dd810cec3a041ee1ac3d842c23749526abd">The weather channel</a>
+            <a class="dropdown-item" href="https://www.nass.usda.gov/Statistics_by_State/Indiana/Publications/Current_News_Release/index.php">USDA site</a>
+          </div>
+        </div>
+    </div>
     <h1>Welcome to My Farm Fields!</h1>
     {% if latest_fields %}
         <ul>
