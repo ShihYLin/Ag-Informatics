@@ -11,26 +11,26 @@
   </p>
   <div class="collapse" id="collapseExample">
     <div class="card card-body">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <h1>Acrelog</h1>
+        {% if field %}
+            <h2 >{{field.field_name}}</h2>
+            <h4>soil type: {{ field.soil_type }}</h4>
+            <h4>location: {{ field.location }}</h4>
+        {% endif %}
+    
+        {% for crop in field.crop_set.all %}
+            <h3>current crop:</h3>
+            <li>{{ crop.crop_name }} is {{ crop.life_form }}</li>
+        {% endfor %}
+    
+        {% for chemical in field.chemical_set.all %}
+            <h3>applied chemical:</h3>
+            <h4>chemical type: {{ chemical.chemical_type }}</h4>
+            <li>{{ chemical.chemical_name }} is applied on {{ chemical.date_applied }}</li>
+        {% endfor %}
     </div>
   </div>
 
-    <h1>Acrelog</h1>
-    {% if field %}
-    <h2 >{{field.field_name}}</h2>
-    <h4>soil type: {{ field.soil_type }}</h4>
-    <h4>location: {{ field.location }}</h4>
-    {% endif %}
 
-    {% for crop in field.crop_set.all %}
-        <h3>current crop:</h3>
-        <li>{{ crop.crop_name }} is {{ crop.life_form }}</li>
-    {% endfor %}
-
-    {% for chemical in field.chemical_set.all %}
-        <h3>applied chemical:</h3>
-        <h4>chemical type: {{ chemical.chemical_type }}</h4>
-        <li>{{ chemical.chemical_name }} is applied on {{ chemical.date_applied }}</li>
-    {% endfor %}
 
 {% endblock content %}
