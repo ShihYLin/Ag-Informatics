@@ -94,5 +94,25 @@
         "chemical_name": "Potash",
         "chem_field_id": "East iso"
       }
+    },
+    {
+      "model": "acrelog.Crop",
+      "pk": 11,
+      "fields": {
+        "crop_name": "soybean",
+        "scientific_name": "Glycine max",
+        "life_form": "annual plant",
+        "field_id": "SoyBeanCropland"
+      }
+    },
+    {
+      "model": "acrelog.Crop",
+      "pk": 12,
+      "fields": {
+        "crop_name": "corn",
+        "scientific_name": "Zea mays",
+        "life_form": "annual plant",
+        "field_id": "East iso"
+      }
     }
 ]    
