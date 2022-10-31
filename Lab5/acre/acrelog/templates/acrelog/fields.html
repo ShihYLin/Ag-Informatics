@@ -1,33 +1,59 @@
 {%extends "skeleton.html"%}
 {% block content %}
 
-  <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      Link with href
-    </a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Button with data-target
-    </button>
-  </p>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        <h1>Acrelog</h1>
-        {% if field %}
-            <h2 >{{field.field_name}}</h2>
-            <h4>soil type: {{ field.soil_type }}</h4>
-            <h4>location: {{ field.location }}</h4>
-        {% endif %}
-    
-        {% for crop in field.crop_set.all %}
-            <h3>current crop:</h3>
-            <li>{{ crop.crop_name }} is {{ crop.life_form }}</li>
-        {% endfor %}
-    
-        {% for chemical in field.chemical_set.all %}
-            <h3>applied chemical:</h3>
-            <h4>chemical type: {{ chemical.chemical_type }}</h4>
-            <li>{{ chemical.chemical_name }} is applied on {{ chemical.date_applied }}</li>
-        {% endfor %}
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            {{field.field_name}} Field Information:
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            {% if field %}
+            <p>soil type: {{ field.soil_type }}</p>
+            <p>location: {{ field.location }}</p>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            {{field.field_name}} Crop Information:
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+                {% for crop in field.crop_set.all %}
+                <h5>current crop:</h5>
+                <li>You have planted {{ crop.crop_name }} here!</li>
+                <li>{{ crop.crop_name }} is {{ crop.life_form }}</li>
+                {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            {{field.field_name}} Applied Chemicals:
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            {% for chemical in field.chemical_set.all %}
+            <p>chemical type: {{ chemical.chemical_type }}</p>
+            <p>{{ chemical.chemical_name }} is applied on {{ chemical.date_applied }}</p>
+            {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 
