@@ -34,3 +34,9 @@ def index(request):
 def fields(request, field_name):
     field = get_object_or_404(Field, pk=field_name)
     return render(request, 'acrelog/fields.html',{'field':field})
+
+def secret(request):
+#    crop = get_object_or_404(Crop)
+    latest_crops = Crop.objects.all()
+    cropcontext = {'latest_crops':latest_crops}
+    return render(request, 'acrelog/secret-sauce.html', cropcontext)

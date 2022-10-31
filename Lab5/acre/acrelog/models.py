@@ -12,7 +12,7 @@ class Field(models.Model):
         return f"Field name: {self.field_name}"
 
 class Crop(models.Model):
-    crop_name = models.CharField(max_length=50)
+    crop_name = models.CharField(max_length=50, primary_key = True)
     scientific_name = models.CharField(max_length=50, default='sci_name')
     life_form = models.CharField(max_length=50, default='form')
     field_id = models.ForeignKey("Field", on_delete = models.CASCADE, default='field')

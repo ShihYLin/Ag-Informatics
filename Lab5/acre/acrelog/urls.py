@@ -4,7 +4,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('<str:field_name>/', views.fields, name="fields")
+    path('fields/<str:field_name>/', views.fields, name="fields"),
+    path('secret-sauce/', views.secret, name="secret-sauce"),
 ]
 
 
