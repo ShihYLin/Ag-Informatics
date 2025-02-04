@@ -24,8 +24,6 @@ Set up a full-stack farm management system using Django.
 
 Built front-end templates and integrated them with Django views.
 
-Designed database models and implemented CRUD functionalities for farm records.
-
 ** 🗺️ Lab 6: Working with and Visualizing Geometric Data **
 
 Processed spatial agricultural data using GIS libraries.
