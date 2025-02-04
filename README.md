@@ -53,6 +53,6 @@ README.md - This documentation file.
 
 ## 🏅 Acknowledgments
 
-Special thanks to Dr. Anika Raturi for their guidance and contributions.
+Special thanks to Dr. Ankita Raturi for their guidance and contributions.
 
 
