@@ -6,31 +6,31 @@ This repository contains a series of lab exercises for the Agricultural Informat
 
 ## 🔬 Lab Descriptions
 
-** 📌 Lab 1: Building the Front-End with HTML & CSS **
+**📌 Lab 1: Building the Front-End with HTML & CSS**
 
 Developed a responsive web interface using HTML and CSS.
 
 Designed layouts and styled elements to create an interactive user experience.
 
-** 📊 Lab 2: Exploring USDA NASS Data with Python **
+**📊 Lab 2: Exploring USDA NASS Data with Python**
 
 Fetched and analyzed agricultural data from the USDA NASS database.
 
 Processed, cleaned, and visualized trends in agricultural statistics using Python.
 
-** 🌱 Lab 3-5: Developing a Farm Management System with Django **
+**🌱 Lab 3-5: Developing a Farm Management System with Django**
 
 Set up a full-stack farm management system using Django.
 
 Built front-end templates and integrated them with Django views.
 
-** 🗺️ Lab 6: Working with and Visualizing Geometric Data **
+**🗺️ Lab 6: Working with and Visualizing Geometric Data**
 
 Processed spatial agricultural data using GIS libraries.
 
 Created interactive maps and visualizations to analyze farm layouts.
 
-** 🤖 Lab 7: Image Classification with TensorFlow **
+**🤖 Lab 7: Image Classification with TensorFlow**
 
 Applied deep learning techniques to classify agricultural images.
 
